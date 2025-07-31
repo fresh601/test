@@ -1,6 +1,9 @@
 name: test
 on: [push]
 
+permissions:
+  contents: write  # 👈 필수
+
 jobs:
   build:
     runs-on: ubuntu-latest
